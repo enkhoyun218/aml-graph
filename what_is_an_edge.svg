@@ -1,0 +1,49 @@
+<svg viewBox="0 0 860 620" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="860" height="620" fill="#F8FAFC"/>
+  <text x="430" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#0F172A">What is an edge?</text>
+  <text x="430" y="72" text-anchor="middle" font-size="14" fill="#64748B">A node is an account. An edge is money flowing from one account to another (an arrow).</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Sender node -->
+  <circle cx="190" cy="320" r="58" fill="#DC2626"/>
+  <text x="190" y="316" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">account</text>
+  <text x="190" y="334" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">100428660</text>
+  <text x="190" y="398" text-anchor="middle" font-size="12" fill="#991B1B">sender (a NODE)</text>
+
+  <!-- Receiver nodes -->
+  <circle cx="680" cy="170" r="46" fill="#2563EB"/>
+  <text x="680" y="168" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">800057620</text>
+  <text x="680" y="184" text-anchor="middle" font-size="11" fill="#DBEAFE">account</text>
+
+  <circle cx="710" cy="320" r="46" fill="#2563EB"/>
+  <text x="710" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">800265A20</text>
+  <text x="710" y="334" text-anchor="middle" font-size="11" fill="#DBEAFE">account</text>
+
+  <circle cx="680" cy="470" r="46" fill="#2563EB"/>
+  <text x="680" y="468" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF">8005C1C10</text>
+  <text x="680" y="484" text-anchor="middle" font-size="11" fill="#DBEAFE">account</text>
+
+  <!-- Edges (arrows) -->
+  <line x1="243" y1="292" x2="632" y2="186" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="248" y1="320" x2="662" y2="320" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="243" y1="348" x2="632" y2="454" stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Edge labels -->
+  <text x="430" y="222" text-anchor="middle" font-size="12" font-weight="600" fill="#0F172A" transform="rotate(-15 430 222)">EDGE: 30 payments → 1 edge, $25,576</text>
+  <text x="455" y="310" text-anchor="middle" font-size="12" font-weight="600" fill="#0F172A">EDGE: 21 payments → 1 edge</text>
+  <text x="430" y="420" text-anchor="middle" font-size="12" font-weight="600" fill="#0F172A" transform="rotate(15 430 420)">EDGE: 30 payments → 1 edge</text>
+
+  <!-- Key callout box -->
+  <rect x="60" y="500" width="740" height="96" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="80" y="528" font-size="14" font-weight="700" fill="#0F172A">The two ideas:</text>
+  <text x="80" y="552" font-size="13" fill="#334155">• NODE = one account (a circle). You have 422,726 of them.</text>
+  <text x="80" y="574" font-size="13" fill="#334155">• EDGE = a one-way money link between two accounts (an arrow). You have 647,939 of them. The arrow's direction is who paid whom.</text>
+
+  <!-- fan-out note -->
+  <text x="430" y="118" text-anchor="middle" font-size="13" fill="#B91C1C" font-weight="600">This shape (one sender → many receivers) is a FAN-OUT, a real laundering pattern.</text>
+</svg>

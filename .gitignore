@@ -1,0 +1,19 @@
+# Raw IBM data (too large; download from Kaggle, see data/DOWNLOAD_DATA.md)
+data/HI-Small_Trans.csv
+data/HI-Small_Patterns.txt
+
+# Anaconda / Jupyter / OS cruft
+anaconda_projects/
+notebooks/
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+.DS_Store
+**/.DS_Store
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# Internal planning docs (kept local)
+SCOPE.md
+ASSIGNMENT.md
